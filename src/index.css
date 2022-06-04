@@ -21,4 +21,5 @@
 }
 body {
   font-family: var(--font-base);
+  background-color: var(--primary-color);
 }

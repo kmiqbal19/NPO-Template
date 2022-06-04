@@ -1,10 +1,16 @@
 .app__nav {
   width: 100%;
   height: calc(4rem + 1vh);
-  background-color: var(--primary-color);
+  background-color: rgba(255, 255, 255, 0.204);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.227);
+  box-shadow: 1px 0px 1px rgb(110, 108, 108);
+  backdrop-filter: blur(4px);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .app__nav-logo {
   display: flex;
@@ -24,6 +30,7 @@
   justify-content: center;
   align-items: center;
   list-style: none;
+  font-size: calc(0.5rem + 0.5vw);
   li {
     margin: 0 1rem;
     display: flex;
