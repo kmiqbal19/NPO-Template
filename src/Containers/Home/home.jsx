@@ -1,10 +1,11 @@
 import React from "react";
 import "./home.scss";
-import { Header } from "../../Components";
+import { Header, Showcase } from "../../Components";
 function Home() {
   return (
     <div>
       <Header />
+      <Showcase />
     </div>
   );
 }

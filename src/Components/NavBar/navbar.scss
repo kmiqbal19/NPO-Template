@@ -48,16 +48,17 @@
     }
 
     a {
-      color: var(--brown-color);
+      color: var(--dark-blue-color);
       text-decoration: none;
       text-transform: uppercase;
+
       &:hover {
         color: var(--black-color);
       }
     }
     &:hover {
       div {
-        background-color: var(--blue-color);
+        background-color: var(--dark-pink-color);
       }
     }
   }

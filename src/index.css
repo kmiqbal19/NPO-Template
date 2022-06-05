@@ -20,6 +20,9 @@
   --brown-color: #46364a;
   --white-color: #ffffff;
   --blue-color: #313bac;
+  --azure-color: azure;
+  --dark-blue-color: #260859;
+  --dark-pink-color: #b50938;
 }
 body {
   font-family: var(--font-base);

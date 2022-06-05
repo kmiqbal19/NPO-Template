@@ -17,9 +17,9 @@ div.slider__container {
       object-fit: cover;
     }
     div.slider__slide--description {
-      width: 50%;
+      width: 40%;
       height: 200px;
-      background-color: rgba(27, 138, 158, 0.509);
+      background-color: #26085986;
       position: absolute;
       bottom: 20vh;
       right: 30vw;
@@ -48,7 +48,7 @@ div.slider__container {
       p:nth-child(1) {
         font-size: calc(1rem + 1vw);
         color: white;
-
+        width: 100%;
         font-family: var(--font-header);
 
         padding: 0.3rem 1rem;
