@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import BtnSlider from "./btnSlider";
 
 function Slider() {
@@ -23,10 +23,16 @@ function Slider() {
   const moveDot = (index) => {
     setSlideIndex(index);
   };
+  useEffect(() => {
+    setInterval(() => {
+      let number = Math.round(Math.random() * (arr.length - 1));
+      number = number + 1;
+      setSlideIndex(number);
+    }, 20000);
+  });
   return (
     <div className="slider__container">
       {arr.map((_, index) => {
-        console.log(slideIndex === index + 1);
         return (
           <div
             className={
@@ -34,6 +40,7 @@ function Slider() {
                 ? "slider__slide slider__slide--active"
                 : "slider__slide"
             }
+            key={`slide-${index}`}
           >
             <img
               src={process.env.PUBLIC_URL + `/Imgs/img${index + 1}.jpg`}
@@ -54,6 +61,7 @@ function Slider() {
                   ? "slider__dot slider__dot--active"
                   : "slider__dot"
               }
+              key={`slider-dot-${index}`}
             ></div>
           );
         })}
