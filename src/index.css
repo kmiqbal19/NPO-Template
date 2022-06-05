@@ -10,6 +10,7 @@
   scroll-behavior: smooth;
 }
 :root {
+  /* font-size: 62.5%; */
   --font-base: "DM Sans", sans-serif;
   --primary-color: #edf2f8;
   --black-color: #030303;

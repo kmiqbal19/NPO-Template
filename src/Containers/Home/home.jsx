@@ -1,7 +1,12 @@
 import React from "react";
 import "./home.scss";
+import { Header } from "../../Components";
 function Home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }
 
 export default Home;
