@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import BtnSlider from "./btnSlider";
-
+import { Link } from "react-router-dom";
 function Slider() {
   const [slideIndex, setSlideIndex] = useState(1);
   const arr = [1, 2, 3, 4, 5];
@@ -32,7 +32,7 @@ function Slider() {
   // });
   return (
     <div className="slider__container">
-      {arr.map((_, index) => {
+      {arr.map((item, index) => {
         return (
           <div
             className={
@@ -46,6 +46,15 @@ function Slider() {
               src={process.env.PUBLIC_URL + `/Imgs/img${index + 1}.jpg`}
               alt="slide-img"
             />
+            <div className="slider__slide--description">
+              <p>
+                WE ARE ALWAYS WITH <span>HUMANITY {item}</span>
+              </p>
+              <p>we are helping those are in needs</p>
+              <Link className="slide__desc--donate" to="/donate">
+                DONATE
+              </Link>
+            </div>
           </div>
         );
       })}
