@@ -23,13 +23,13 @@ function Slider() {
   const moveDot = (index) => {
     setSlideIndex(index);
   };
-  useEffect(() => {
-    setInterval(() => {
-      let number = Math.round(Math.random() * (arr.length - 1));
-      number = number + 1;
-      setSlideIndex(number);
-    }, 20000);
-  });
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     let number = Math.round(Math.random() * (arr.length - 1));
+  //     number = number + 1;
+  //     setSlideIndex(number);
+  //   }, 20000);
+  // });
   return (
     <div className="slider__container">
       {arr.map((_, index) => {
