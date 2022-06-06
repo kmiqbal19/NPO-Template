@@ -1,0 +1,64 @@
+div.supportsection__container {
+  width: 100%;
+  height: 300px;
+  background-color: var(--dark-blue-color);
+  display: flex;
+  div.support__volunteer {
+    flex: 0.5;
+    height: 100%;
+
+    padding: 2rem 5rem 3rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    p {
+      font-size: 2rem;
+      color: var(--azure-color);
+    }
+    ul {
+      list-style: none;
+
+      li {
+        color: white;
+        padding: 1rem;
+      }
+    }
+    a {
+      color: white;
+      padding: 0.5rem 1rem;
+      border: 1px solid white;
+      display: inline-block;
+      text-align: center;
+      &:hover {
+        background-color: white;
+        color: var(--dark-blue-color);
+      }
+    }
+  }
+  div.support__donate {
+    flex: 0.5;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    svg {
+      font-size: calc(5rem + 2vw);
+      color: white;
+    }
+    a {
+      color: var(--dark-blue-color);
+      font-size: 1.5rem;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      background-color: white;
+      margin-top: 1rem;
+      &:hover {
+        color: white;
+        background-color: var(--dark-blue-color);
+        border: 1px solid white;
+      }
+    }
+  }
+}

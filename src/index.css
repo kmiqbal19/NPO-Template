@@ -23,8 +23,10 @@
   --azure-color: azure;
   --dark-blue-color: #260859;
   --dark-pink-color: #b50938;
+  --base-bg: linear-gradient(90deg, #260859 0%, #b50938 100%);
 }
 body {
   font-family: var(--font-base);
   background-color: var(--primary-color);
+  overflow-x: hidden;
 }

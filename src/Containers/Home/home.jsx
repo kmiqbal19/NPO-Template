@@ -1,11 +1,22 @@
 import React from "react";
 import "./home.scss";
-import { Header, Showcase } from "../../Components";
+import {
+  FounderSection,
+  Header,
+  Showcase,
+  ShowWork,
+  StatProjects,
+  SupportSection,
+} from "../../Components";
 function Home() {
   return (
     <div>
       <Header />
       <Showcase />
+      <ShowWork />
+      <FounderSection />
+      <StatProjects />
+      <SupportSection />
     </div>
   );
 }
