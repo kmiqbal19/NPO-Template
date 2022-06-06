@@ -1,0 +1,19 @@
+div.projects__container {
+  padding: 2rem;
+  h1 {
+    margin: 5rem 0rem;
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 5%;
+      height: 5px;
+      background-color: black;
+      bottom: -2rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
