@@ -4,8 +4,8 @@ import { urlFor } from "../../client";
 import ReactPlayer from "react-player";
 
 import { BsFacebook } from "react-icons/bs";
-import video from "../../Assets/video-1.mp4";
-function Project({ project }) {
+
+function Project({ project, index }) {
   return (
     <div className="project__container">
       <h3>{project.projectname}</h3>
@@ -21,11 +21,11 @@ function Project({ project }) {
               alt=""
             />
             <a href="https://www.facebook.com/arrahamanfoundation">আর রাহমান</a>
-            <a href="#">Watch on Facebook</a>
+            <a href={project.videolink}>Watch on Facebook</a>
             <BsFacebook style={{ color: "#1b74e4", fontSize: "1.4rem" }} />
           </div>
           <ReactPlayer
-            url={video}
+            url={process.env.PUBLIC_URL + `/videos/video-${index + 1}.mp4`}
             width="100%"
             height="100%"
             autoPlay

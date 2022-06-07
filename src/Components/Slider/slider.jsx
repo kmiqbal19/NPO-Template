@@ -10,7 +10,6 @@ function Slider() {
     } else if (slideIndex === arr.length) {
       setSlideIndex(1);
     }
-    console.log(slideIndex);
   };
   const prevSlide = () => {
     if (slideIndex !== 1) {
@@ -18,7 +17,6 @@ function Slider() {
     } else if (slideIndex === 1) {
       setSlideIndex(arr.length);
     }
-    console.log(slideIndex);
   };
   const moveDot = (index) => {
     setSlideIndex(index);

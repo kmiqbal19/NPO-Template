@@ -8,6 +8,7 @@ import { default as FounderSection } from "./FounderSection/foundersection.jsx";
 import { default as SupportSection } from "./SupportSection/supportsection.jsx";
 import { default as StatProjects } from "./StatProjects/statprojects.jsx";
 import { default as Project } from "./ProjectComponent/projectcomponent.jsx";
+import { default as GalleryComponent } from "./GalleryComponent/gallerycomponent.jsx";
 export {
   SingleProject,
   NavBar,
@@ -19,4 +20,5 @@ export {
   SupportSection,
   StatProjects,
   Project,
+  GalleryComponent,
 };

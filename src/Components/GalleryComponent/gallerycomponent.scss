@@ -1,0 +1,10 @@
+div.gallery-post__container {
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  img {
+    width: 100%;
+    height: 70%;
+  }
+}

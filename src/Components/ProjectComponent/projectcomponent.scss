@@ -37,7 +37,7 @@ div.project__container {
     div.project__container--bottom-video {
       width: 50%;
       height: 100%;
-      border: 1px solid blue;
+      // border: 1px solid blue;
       position: relative;
       div.project__container--video-overlay {
         position: absolute;
@@ -45,7 +45,7 @@ div.project__container {
         left: 0;
         width: 100%;
         height: 5rem;
-        background-color: rgba(31, 8, 8, 0.676);
+        background-color: rgba(1, 19, 11, 0.718);
         z-index: 1;
         display: flex;
         align-items: center;
