@@ -1,6 +1,6 @@
 div.slider__container {
-  width: 100%;
-  height: calc(50vh + 10rem);
+  width: 100vw;
+  height: calc(70vh + 10rem);
   margin-top: calc(4rem + 1vh);
   position: relative;
   overflow: hidden;
@@ -18,12 +18,12 @@ div.slider__container {
       object-fit: cover;
     }
     div.slider__slide--description {
-      width: 40%;
-      height: 200px;
+      width: 50%;
+      height: 300px;
       background-color: #26085986;
       position: absolute;
-      bottom: 20vh;
-      right: 30vw;
+      bottom: 30vh;
+      right: 25vw;
       display: flex;
       justify-content: center;
       align-items: flex-start;

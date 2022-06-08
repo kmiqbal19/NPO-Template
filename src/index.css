@@ -28,5 +28,10 @@
 body {
   font-family: var(--font-base);
   background-color: var(--primary-color);
-  overflow-x: hidden;
+}
+@media screen and (max-width: 800px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
 }

@@ -21,11 +21,11 @@ function SupportSection() {
         </ul>
         <Link to="/contact">Contact Us</Link>
       </div>
-      <div className="support__donate">
+      {/* <div className="support__donate">
         <BiDonateHeart />
 
         <Link to="/donate">Donate</Link>
-      </div>
+      </div> */}
     </div>
   );
 }
