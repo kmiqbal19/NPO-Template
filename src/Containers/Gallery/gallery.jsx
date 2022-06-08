@@ -35,11 +35,22 @@ function Gallery() {
       </div>
       <div className="gallery__pagination-bar">
         <button
+          disabled={page === 1}
           onClick={() => setPage((page) => (page === 1 ? page : page - 1))}
         >
           Prev
         </button>
+        <select value={page} onChange={(e) => setPage(e.target.value)}>
+          <optgroup label="page">
+            {Array(pageCount)
+              .fill(null)
+              .map((_, i) => {
+                return <option key={`page${i + 1}`}>{i + 1}</option>;
+              })}
+          </optgroup>
+        </select>
         <button
+          disabled={page === pageCount}
           onClick={() =>
             setPage((page) => (page === pageCount ? page : page + 1))
           }
