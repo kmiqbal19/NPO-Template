@@ -3,4 +3,5 @@ import { default as About } from "./About/about.jsx";
 import { default as Projects } from "./Projects/projects.jsx";
 import { default as Gallery } from "./Gallery/gallery.jsx";
 import { default as Contact } from "./Contact/contact.jsx";
-export { Home, About, Projects, Gallery, Contact };
+import { default as Donate } from "./Donate/donate.jsx";
+export { Home, About, Projects, Gallery, Contact, Donate };

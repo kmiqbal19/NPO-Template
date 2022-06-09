@@ -1,7 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Home, Projects, About, Gallery, Contact } from "./Containers";
+import { Home, Projects, About, Gallery, Contact, Donate } from "./Containers";
 import { SingleProject, NavBar } from "./Components";
+
 const App = () => {
   return (
     <div className="app">
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/donate" element={<Donate />} />
       </Routes>
     </div>
   );
