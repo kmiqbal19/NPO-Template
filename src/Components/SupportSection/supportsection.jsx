@@ -21,11 +21,14 @@ function SupportSection() {
         </ul>
         <Link to="/contact">Contact Us</Link>
       </div>
-      {/* <div className="support__donate">
+      <div className="support__donate">
+        <p>
+          The Prophet (SAW) said, "He is not a believer whose stomach is filled
+          while his neighbour is hungry."{" "}
+        </p>
         <BiDonateHeart />
-
         <Link to="/donate">Donate</Link>
-      </div> */}
+      </div>
     </div>
   );
 }

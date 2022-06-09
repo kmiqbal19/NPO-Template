@@ -22,6 +22,7 @@
   --blue-color: #313bac;
   --azure-color: azure;
   --dark-blue-color: #260859;
+  --light-blue-color: rgba(11, 58, 124, 0.78);
   --dark-pink-color: #b50938;
   --base-bg: linear-gradient(90deg, #260859 0%, #b50938 100%);
 }

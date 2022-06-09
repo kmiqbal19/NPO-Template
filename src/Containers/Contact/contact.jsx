@@ -27,8 +27,8 @@ function Contact() {
         email: formData.email,
         message: formData.message,
       };
-      const res = await client.create(contact);
-      // console.log(res);
+      await client.create(contact);
+
       setLoading(false);
       setIsFormSubmitted(true);
       usernameRef.current.value = "";

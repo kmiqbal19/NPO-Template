@@ -1,63 +1,86 @@
 div.supportsection__container {
   width: 100%;
-  height: 300px;
-  background-color: var(--dark-blue-color);
-  display: flex;
-  div.support__volunteer {
-    flex: 0.5;
-    height: 100%;
+  height: calc(40rem + 20vh);
 
-    padding: 2rem 5rem 3rem 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(11, 58, 124, 0.38), black),
+    url("https://i.ibb.co/ZWDMTGf/katt-yukawa-K0-E6-E0a0-R3-A-unsplash.jpg");
+  background-color: rgba(0, 0, 0, 0.594);
+  background-size: cover;
+  div.support__volunteer {
+    width: 70%;
+    height: 60%;
+    // border: 1px solid red;
+
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
 
     p {
-      font-size: 2rem;
+      font-size: calc(2rem + 1vw);
       color: var(--azure-color);
+      margin-bottom: 1rem;
     }
     ul {
       list-style: none;
 
       li {
         color: white;
-        padding: 1rem;
+        padding: 1.5rem;
+        font-size: calc(1rem + 0.5vw);
       }
     }
     a {
-      color: white;
-      padding: 0.5rem 1rem;
+      margin-top: 3rem;
+      padding: 0.5rem 1.5rem;
       border: 1px solid white;
       display: inline-block;
       text-align: center;
+      background-color: white;
+      text-decoration: none;
+      transition: all 0.3s ease;
       &:hover {
-        background-color: white;
-        color: var(--dark-blue-color);
+        color: white;
+        background-color: var(--light-blue-color);
       }
     }
   }
   div.support__donate {
-    flex: 0.5;
-    padding: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    p {
+      color: white;
+      margin: 1rem 2rem;
+      font-size: 1.5rem;
+      text-align: center;
+    }
     svg {
       font-size: calc(5rem + 2vw);
       color: white;
+      transition: color 0.2s ease-out;
+      &:hover {
+        color: rgb(235, 74, 139);
+      }
     }
     a {
-      color: var(--dark-blue-color);
+      color: var(--light-blue-color);
       font-size: 1.5rem;
       text-decoration: none;
       padding: 0.5rem 1rem;
       background-color: white;
       margin-top: 1rem;
+      transition: all 0.4s ease-out;
       &:hover {
         color: white;
-        background-color: var(--dark-blue-color);
+        background-color: var(--light-blue-color);
         border: 1px solid white;
+        transform: scale(1.3);
       }
     }
   }
