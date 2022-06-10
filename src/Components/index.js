@@ -9,6 +9,7 @@ import { default as SupportSection } from "./SupportSection/supportsection.jsx";
 import { default as StatProjects } from "./StatProjects/statprojects.jsx";
 import { default as Project } from "./ProjectComponent/projectcomponent.jsx";
 import { default as GalleryComponent } from "./GalleryComponent/gallerycomponent.jsx";
+import { default as Footer } from "./Footer/footer";
 export {
   SingleProject,
   NavBar,
@@ -21,4 +22,5 @@ export {
   StatProjects,
   Project,
   GalleryComponent,
+  Footer,
 };

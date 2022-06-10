@@ -1,6 +1,7 @@
 import React from "react";
 import "./home.scss";
 import {
+  Footer,
   FounderSection,
   Header,
   Showcase,
@@ -17,6 +18,7 @@ function Home() {
       <FounderSection />
       <StatProjects />
       <SupportSection />
+      <Footer />
     </div>
   );
 }

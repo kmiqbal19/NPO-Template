@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./gallery.scss";
 import { client } from "../../client";
-import { GalleryComponent } from "../../Components";
+import { GalleryComponent, Footer } from "../../Components";
 
 function Gallery() {
   const [galleryPost, setGalleryPost] = useState([]);
@@ -26,39 +26,44 @@ function Gallery() {
   }, [page, skip]);
 
   return (
-    <div className="gallery__container">
-      <div className="gallery__content">
-        {loading && <h1>loading...</h1>}
-        {galleryPost.map((post, index) => {
-          return <GalleryComponent post={post} key={`galleryItem-${index}`} />;
-        })}
+    <>
+      <div className="gallery__container">
+        <div className="gallery__content">
+          {loading && <h1>loading...</h1>}
+          {galleryPost.map((post, index) => {
+            return (
+              <GalleryComponent post={post} key={`galleryItem-${index}`} />
+            );
+          })}
+        </div>
+        <div className="gallery__pagination-bar">
+          <button
+            disabled={page === 1}
+            onClick={() => setPage((page) => (page === 1 ? page : page - 1))}
+          >
+            Prev
+          </button>
+          <select value={page} onChange={(e) => setPage(e.target.value)}>
+            <optgroup label="page">
+              {Array(pageCount)
+                .fill(null)
+                .map((_, i) => {
+                  return <option key={`page${i + 1}`}>{i + 1}</option>;
+                })}
+            </optgroup>
+          </select>
+          <button
+            disabled={page === pageCount}
+            onClick={() =>
+              setPage((page) => (page === pageCount ? page : page + 1))
+            }
+          >
+            Next
+          </button>
+        </div>
       </div>
-      <div className="gallery__pagination-bar">
-        <button
-          disabled={page === 1}
-          onClick={() => setPage((page) => (page === 1 ? page : page - 1))}
-        >
-          Prev
-        </button>
-        <select value={page} onChange={(e) => setPage(e.target.value)}>
-          <optgroup label="page">
-            {Array(pageCount)
-              .fill(null)
-              .map((_, i) => {
-                return <option key={`page${i + 1}`}>{i + 1}</option>;
-              })}
-          </optgroup>
-        </select>
-        <button
-          disabled={page === pageCount}
-          onClick={() =>
-            setPage((page) => (page === pageCount ? page : page + 1))
-          }
-        >
-          Next
-        </button>
-      </div>
-    </div>
+      <Footer />
+    </>
   );
 }
 

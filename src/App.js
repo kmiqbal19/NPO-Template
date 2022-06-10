@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Home, Projects, About, Gallery, Contact, Donate } from "./Containers";
+import { Home, Projects, Gallery, Contact, Donate } from "./Containers";
 import { SingleProject, NavBar } from "./Components";
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:id" element={<SingleProject />} />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/about" element={<About />} />
+
         <Route path="/contact" element={<Contact />} />
         <Route path="/donate" element={<Donate />} />
       </Routes>

@@ -1,8 +1,9 @@
 import React, { useState, useRef } from "react";
 import "./contact.scss";
 import { client } from "../../client";
-import mobile from "../../Assets/mobile.png";
 import emailImg from "../../Assets/email.png";
+import { Footer } from "../../Components";
+
 function Contact() {
   const usernameRef = useRef(null);
   const emailRef = useRef(null);
@@ -44,59 +45,64 @@ function Contact() {
     }
   };
   return (
-    <div className="contact__container">
-      <div className="contact__cards--container">
-        <div className="contact__card">
-          <img src={emailImg} alt="email" />
-          <a href="mailto:hello@gmail.com">hello@gmail.com</a>
+    <>
+      <div className="contact__container">
+        <div className="contact__cards--container">
+          <div className="contact__card">
+            <img src={emailImg} alt="email" />
+            <a href="mailto:hello@gmail.com">hello@gmail.com</a>
+          </div>
+          <div className="contact__card">
+            <img
+              src="https://i.ibb.co/FhDBFBg/whatsapp-logo-png-2263.png"
+              alt="tel"
+            />
+            <a href="https://wa.me/+123456789">+1 (234) 56789</a>
+          </div>
         </div>
-        <div className="contact__card">
-          <img
-            src="https://i.ibb.co/FhDBFBg/whatsapp-logo-png-2263.png"
-            alt="tel"
-          />
-          <a href="https://wa.me/+123456789">+1 (234) 56789</a>
-        </div>
-      </div>
-      {!isFormSubmitted ? (
-        <form className="contact__form" onSubmit={handleSubmit}>
-          <label>Name</label>
-          <input
-            ref={usernameRef}
-            name="username"
-            placeholder="Your name..."
-            type="text"
-            value={username}
-            onChange={handleChangeInput}
-          />
-          <label>Email</label>
-          <input
-            ref={emailRef}
-            type="email"
-            placeholder="Your email.."
-            name="email"
-            value={email}
-            onChange={handleChangeInput}
-          />
-          <label>Message</label>
-          <textarea
-            ref={messageRef}
-            name="message"
-            placeholder="Type your message here..."
-            onChange={handleChangeInput}
-            value={message}
-          />
+        {!isFormSubmitted ? (
+          <form className="contact__form" onSubmit={handleSubmit}>
+            <label>Name</label>
+            <input
+              ref={usernameRef}
+              name="username"
+              placeholder="Your name..."
+              type="text"
+              value={username}
+              onChange={handleChangeInput}
+            />
+            <label>Email</label>
+            <input
+              ref={emailRef}
+              type="email"
+              placeholder="Your email.."
+              name="email"
+              value={email}
+              onChange={handleChangeInput}
+            />
+            <label>Message</label>
+            <textarea
+              ref={messageRef}
+              name="message"
+              placeholder="Type your message here..."
+              onChange={handleChangeInput}
+              value={message}
+            />
 
-          <button type="submit" disabled={loading}>
-            {loading ? "Sending..." : "Submit"}
-          </button>
-        </form>
-      ) : (
-        <div className="contact__submit-thank">
-          <p>Thank you for getting in touch! We will contact with you soon.</p>
-        </div>
-      )}
-    </div>
+            <button type="submit" disabled={loading}>
+              {loading ? "Sending..." : "Submit"}
+            </button>
+          </form>
+        ) : (
+          <div className="contact__submit-thank">
+            <p>
+              Thank you for getting in touch! We will contact with you soon.
+            </p>
+          </div>
+        )}
+      </div>
+      <Footer />
+    </>
   );
 }
 
