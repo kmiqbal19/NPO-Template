@@ -51,7 +51,10 @@ function Contact() {
           <a href="mailto:hello@gmail.com">hello@gmail.com</a>
         </div>
         <div className="contact__card">
-          <img src={mobile} alt="tel" />
+          <img
+            src="https://i.ibb.co/FhDBFBg/whatsapp-logo-png-2263.png"
+            alt="tel"
+          />
           <a href="https://wa.me/+123456789">+1 (234) 56789</a>
         </div>
       </div>

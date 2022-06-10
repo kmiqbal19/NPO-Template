@@ -56,7 +56,7 @@ div.project__container {
       }
     }
     img {
-      width: calc(300px + 15vw);
+      width: 40%;
       height: calc(300px + 15vh);
       object-fit: cover;
       @media screen and (max-width: 1000px) {
@@ -76,7 +76,7 @@ div.project__container {
       flex-direction: column;
     }
     div.project__container--bottom-video {
-      width: 50%;
+      width: 40%;
       height: calc(300px + 15vh);
       // border: 1px solid blue;
       position: relative;
