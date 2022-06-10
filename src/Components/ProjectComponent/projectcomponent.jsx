@@ -22,7 +22,7 @@ function Project({ project, index }) {
             />
             <a href="https://www.facebook.com/arrahamanfoundation">আর রাহমান</a>
             <a href={project.videolink}>Watch on Facebook</a>
-            <BsFacebook style={{ color: "#1b74e4", fontSize: "1.4rem" }} />
+            <BsFacebook />
           </div>
           <ReactPlayer
             url={process.env.PUBLIC_URL + `/videos/video-${index + 1}.mp4`}

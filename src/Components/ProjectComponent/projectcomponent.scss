@@ -3,26 +3,65 @@ div.project__container {
   height: 100%;
   background-color: rgb(239, 237, 237);
   padding: 5rem;
+  @media screen and (max-width: 1200px) {
+    padding: 5rem 2rem;
+  }
+
   h3 {
     font-size: calc(0.5vw + 1.5rem);
+    @media screen and (max-width: 1000px) {
+      text-align: center;
+    }
   }
   div.project__container--mid {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 3rem 0rem;
-
+    // border: 1px solid red;
+    @media screen and (max-width: 1000px) {
+      flex-direction: column-reverse;
+    }
     p {
       font-size: calc(1rem + 0.5vw);
 
       width: 50%;
       text-align: justify;
       line-height: 2;
+      display: -webkit-box;
+      -webkit-line-clamp: 7;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      overflow-x: hidden;
+      padding-right: 2rem;
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: rgba(113, 111, 111, 0.8);
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+      }
+      @media screen and (max-width: 1000px) {
+        width: 90%;
+        margin-top: 3rem;
+        // padding-right: 0rem;
+      }
     }
     img {
       width: calc(300px + 15vw);
       height: calc(300px + 15vh);
       object-fit: cover;
+      @media screen and (max-width: 1000px) {
+        width: 90%;
+      }
     }
   }
   div.project__container--bottom {
@@ -30,15 +69,21 @@ div.project__container {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 70vh;
+    height: 100%;
 
     margin-top: 5rem;
-
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+    }
     div.project__container--bottom-video {
       width: 50%;
-      height: 100%;
+      height: calc(300px + 15vh);
       // border: 1px solid blue;
       position: relative;
+      @media screen and (max-width: 1000px) {
+        width: 90%;
+        margin-top: 3rem;
+      }
       div.project__container--video-overlay {
         position: absolute;
         top: 0;
@@ -49,6 +94,7 @@ div.project__container {
         z-index: 1;
         display: flex;
         align-items: center;
+
         img {
           width: 50px;
           height: 50px;
@@ -62,15 +108,30 @@ div.project__container {
           text-decoration: underline;
           margin: 0rem 1rem;
           color: rgb(239, 237, 237);
+          @media screen and (max-width: 600px) {
+            margin: 0.5rem;
+          }
+          @media screen and (max-width: 500px) {
+            width: 6rem;
+          }
+        }
+        svg {
+          color: #1b74e4;
+          font-size: calc(1rem + 0.5vw);
+          margin-right: 1rem;
         }
       }
     }
     p {
-      font-size: 1.5rem;
+      font-size: calc(1rem + 0.5vw);
       line-height: 1.5;
       width: 50%;
       text-align: justify;
       padding: 3rem;
+      @media screen and (max-width: 1000px) {
+        width: 90%;
+        padding: 3rem 0rem;
+      }
     }
   }
 }

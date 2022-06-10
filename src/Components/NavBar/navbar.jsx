@@ -12,7 +12,7 @@ function NavBar() {
         <img src={logo} alt="main-logo" />
       </div>
       <ul className="app__nav-list">
-        {["home", "projects", "gallery", "about", "contact"].map(
+        {["home", "projects", "gallery", "contact", "donate"].map(
           (item, index) => {
             return (
               <li key={`nav-list-${item}-${index}`}>
@@ -30,7 +30,7 @@ function NavBar() {
             <motion.div exit={{ x: [0, 700] }}>
               <HiX onClick={() => setToggle(false)} />
               <ul>
-                {["home", "projects", "gallery", "about", "contact"].map(
+                {["home", "projects", "gallery", "donate", "contact"].map(
                   (item, index) => {
                     return (
                       <li key={`nav-list-mobile-${item}-${index}`}>
