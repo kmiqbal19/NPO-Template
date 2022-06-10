@@ -12,6 +12,14 @@
   top: 0;
   left: 0;
   z-index: 5;
+  transition: background-color 0.2s ease-out;
+}
+.app__nav.active {
+  background-color: var(--dark-pink-color);
+  @media screen and (max-width: 750px) {
+    background-color: rgba(255, 255, 255, 0.204);
+    -webkit-backdrop-filter: blur(4px);
+  }
 }
 .app__nav-logo {
   display: flex;
