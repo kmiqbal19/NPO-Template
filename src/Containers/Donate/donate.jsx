@@ -22,7 +22,7 @@ function Donate() {
   };
   return (
     <>
-      <div className="donate__container" style={{ marginTop: "10rem" }}>
+      <div className="donate__container">
         <div className="donate__bkash--container">
           <img
             src="https://i.ibb.co/51Yjkgj/Bkash-logo-PNG1.png"

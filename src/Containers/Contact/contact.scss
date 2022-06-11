@@ -5,7 +5,9 @@ div.contact__container {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-top: calc(4rem + 1vh);
+  background: url("https://i.ibb.co/Bq72HhY/leone-venter-Vie-M9-Bd-ZKFo-unsplash.jpg");
+  background-size: cover;
   div.contact__cards--container {
     display: flex;
 
@@ -30,7 +32,10 @@ div.contact__container {
         width: 100%;
       }
       &:hover {
-        background-color: rgb(223, 240, 235);
+        background-color: rgba(132, 216, 194, 0.282);
+        backdrop-filter: blur(5px);
+
+        box-shadow: 0px 0px 5px rgba(96, 187, 117, 0.837);
       }
       img {
         width: 50px;
@@ -75,8 +80,9 @@ div.contact__container {
       border: none;
       height: 3rem;
       font-size: 1rem;
+      // box-shadow: 0px 0px 5px rgb(27, 94, 119);
       &:focus {
-        outline: 1px solid blue;
+        outline: 3px solid pink;
       }
       @media screen and (min-width: 2000px) {
         height: 4rem;
@@ -106,6 +112,7 @@ div.contact__container {
       }
       &:disabled {
         cursor: not-allowed;
+        background-color: gray;
       }
       @media screen and (min-width: 2000px) {
         font-size: 1.5rem;

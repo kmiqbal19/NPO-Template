@@ -43,3 +43,15 @@ div.projects__container {
     // box-shadow: 0px 0px 10px rgb(143, 137, 137);
   }
 }
+div.loading__container {
+  width: 100vw;
+  height: calc(100vh - 4rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  span {
+    font-size: calc(2rem + 2vw);
+    color: white;
+  }
+}

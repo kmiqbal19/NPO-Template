@@ -49,7 +49,7 @@ function Contact() {
       <div className="contact__container">
         <div className="contact__cards--container">
           <div className="contact__card">
-            <img src={emailImg} alt="email" />
+            <img src="https://i.ibb.co/6XGHchF/email-13762.png" alt="email" />
             <a href="mailto:hello@gmail.com">hello@gmail.com</a>
           </div>
           <div className="contact__card">
@@ -70,6 +70,7 @@ function Contact() {
               type="text"
               value={username}
               onChange={handleChangeInput}
+              autoFocus
             />
             <label>Email</label>
             <input
@@ -89,7 +90,15 @@ function Contact() {
               value={message}
             />
 
-            <button type="submit" disabled={loading}>
+            <button
+              type="submit"
+              disabled={
+                loading ||
+                !formData.username ||
+                !formData.email ||
+                !formData.message
+              }
+            >
               {loading ? "Sending..." : "Submit"}
             </button>
           </form>

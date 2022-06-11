@@ -33,18 +33,47 @@ div.gallery__container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 5rem;
+    @media screen and (min-width: 2000px) {
+      margin: 7rem;
+    }
     button {
       padding: 0.5rem 1.5rem;
       margin: 0rem 1rem;
+      background-color: var(--dark-blue-color);
+      color: white;
+      border: 3px solid white;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      @media screen and (min-width: 2000px) {
+        padding: 1rem 3rem;
+        font-size: 1.3rem;
+      }
       &:hover {
-        background-color: red;
+        background-color: white;
+        color: var(--dark-blue-color);
+        font-weight: bold;
+        border: 3px solid var(--dark-blue-color);
       }
       &:disabled {
         cursor: not-allowed;
+        background-color: rgb(83, 83, 87);
+        &:hover {
+          color: white;
+          border: 3px solid rgb(221, 77, 77);
+          font-weight: normal;
+        }
       }
     }
     select {
       padding: 0.5rem 1rem;
+      background-color: var(--dark-blue-color);
+      color: white;
+      border: 3px solid rgb(173, 168, 168);
+      @media screen and (min-width: 2000px) {
+        padding: 1rem 1.5rem;
+        font-size: 1.3rem;
+      }
     }
   }
 }
