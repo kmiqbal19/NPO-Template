@@ -11,12 +11,15 @@ function Donate() {
   const handleCopyNumber = (e) => {
     numberCopyRef.current.select();
     document.execCommand("copy");
+    navigator.clipboard.writeText(numberCopyRef.current.value);
     e.target.focus();
     setCopySuccessNumber("Number Copied!");
   };
   const handleCopyName = (e) => {
     nameCopyRef.current.select();
     document.execCommand("copy");
+    git;
+    navigator.clipboard.writeText(nameCopyRef.current.value);
     e.target.focus();
     setCopySuccessName("Name Copied!");
   };
