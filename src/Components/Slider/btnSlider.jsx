@@ -1,7 +1,6 @@
 import React from "react";
 import "./slider.scss";
-import LeftArrow from "./icons/left-arrow.svg";
-import RightArrow from "./icons/right-arrow.svg";
+
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 function BtnSlider({ moveSlide, direction }) {
   return (
@@ -13,10 +12,6 @@ function BtnSlider({ moveSlide, direction }) {
       }
       onClick={moveSlide}
     >
-      {/* <img
-        src={direction === "next" ? RightArrow : LeftArrow}
-        alt="slider-arrow"
-      /> */}
       {direction === "next" ? <AiOutlineRight /> : <AiOutlineLeft />}
     </button>
   );

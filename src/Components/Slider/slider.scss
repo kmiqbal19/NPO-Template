@@ -19,7 +19,7 @@ div.slider__container {
     }
     div.slider__slide--description {
       width: 50%;
-      height: 250px;
+      height: 200px;
       background-color: #26085986;
       position: absolute;
       bottom: 30vh;
@@ -28,23 +28,23 @@ div.slider__container {
       justify-content: center;
       align-items: flex-start;
       flex-direction: column;
-      padding: 1.5rem;
+      padding: 1.5rem 3rem;
       overflow: hidden;
       @media screen and (max-width: 900px) {
-        & {
-          height: 250px;
-          width: 60%;
-
-          right: 150px;
-        }
+        height: 250px;
+        width: 60%;
+        padding: 1.5rem;
+        right: 150px;
       }
       @media screen and (max-width: 600px) {
-        & {
-          height: 250px;
-          width: 60%;
-
-          right: 90px;
-        }
+        right: 90px;
+      }
+      @media screen and (max-width: 400px) {
+        right: 65px;
+      }
+      @media screen and (min-width: 2000px) {
+        height: 400px;
+        bottom: 25vh;
       }
       p:nth-child(1) {
         font-size: calc(1rem + 1vw);
@@ -53,39 +53,20 @@ div.slider__container {
         font-family: var(--font-header);
 
         padding: 0.3rem 1rem;
-        border-bottom: 1px solid red;
+        border-bottom: 2px solid white;
         span {
           color: red;
+        }
+        @media screen and (min-width: 2000px) {
+          font-size: calc(2rem + 1vw);
         }
       }
       p:nth-child(2) {
         font-size: 1rem;
         color: var(--white-color);
-        margin: 0.2rem 1rem 1rem;
-        // @media screen and (max-width: 900px) {
-        //   & {
-        //     margin: 0.2rem 1rem 0.2rem;
-        //   }
-        // }
-      }
-      a {
-        padding: 0.3rem 0.8rem;
-        margin: 1rem;
-        background-color: white;
-        border: 1px solid rgb(232, 187, 51);
-        color: rgb(232, 187, 51);
-        text-decoration: none;
-        &:hover {
-          color: white;
-          background-color: rgb(232, 187, 51);
-          border-radius: 2px;
-          border: 1px solid white;
-          cursor: pointer;
-        }
-        @media screen and (max-width: 750px) {
-          & {
-            background-color: black;
-          }
+        margin: 1.5rem 1rem 1rem;
+        @media screen and (min-width: 2000px) {
+          font-size: calc(1rem + 0.5vw);
         }
       }
     }
@@ -98,43 +79,54 @@ div.slider__container {
 .slider__btn {
   width: 40px;
   height: 40px;
-
-  background-color: rgba(0, 0, 0, 0.309);
+  // border-radius: 5px;
+  background-color: rgba(163, 9, 9, 0.555);
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.681);
+  border: none;
   cursor: pointer;
   transition: all 0.3s ease-out;
+
+  @media screen and (max-width: 700px) {
+    width: 25px;
+    height: 25px;
+  }
+  @media screen and (min-width: 2000px) {
+    width: 50px;
+    height: 50px;
+  }
   svg {
     font-size: 30px;
     // pointer-events: none;
     color: white;
   }
   &:hover {
-    background-color: rgba(0, 0, 0, 0.509);
+    background-color: rgba(12, 67, 157, 0.855);
   }
   &:active {
     transform: scale(0.99999999999);
     transform-origin: center;
-  }
-  @media screen and (max-width: 700px) {
-    & {
-      width: 25px;
-      height: 25px;
-    }
   }
 }
 .slider__btn--next {
   top: 50%;
   right: 20px;
   transform: translateY(-60%);
+  margin-right: 1rem;
+  @media screen and (min-width: 2000px) {
+    right: 60px;
+    margin-right: 2rem;
+  }
 }
 .slider__btn--prev {
   top: 50%;
   left: 20px;
   transform: translateY(-60%);
+  @media screen and (min-width: 2000px) {
+    left: 50px;
+  }
 }
 .slider__dots--container {
   position: absolute;
@@ -146,11 +138,17 @@ div.slider__container {
 .slider__dot {
   width: 10px;
   height: 10px;
-  border: 3px solid #fff;
+  border: 3px solid white;
   margin: 0 5px;
-  background-color: #fff;
+  background-color: white;
   cursor: pointer;
+  @media screen and (min-width: 2000px) {
+    width: 20px;
+    height: 20px;
+    border: 5px solid white;
+  }
 }
 .slider__dot--active {
-  background-color: black;
+  // background-color: var(--dark-blue-color);
+  background-color: var(--black-color);
 }

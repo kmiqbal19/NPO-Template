@@ -28,9 +28,12 @@ div.showcase__container {
       margin: 1rem;
       border-bottom: 1px solid var(--azure-color);
       border-top: 1px solid white;
-      padding: 2rem 0rem;
+      padding: 5rem 0rem;
       color: var(--azure-color);
       text-align: justify;
+      @media screen and (max-width: 1300px) {
+        padding: 3rem 0rem;
+      }
       span {
         font-weight: bold;
         color: white;

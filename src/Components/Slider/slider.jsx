@@ -49,9 +49,6 @@ function Slider() {
                 WE ARE ALWAYS WITH <span>HUMANITY {item}</span>
               </p>
               <p>we are helping those are in needs</p>
-              <Link className="slide__desc--donate" to="/donate">
-                DONATE
-              </Link>
             </div>
           </div>
         );
