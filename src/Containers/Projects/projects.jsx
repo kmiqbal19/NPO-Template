@@ -17,11 +17,17 @@ function Projects() {
     <>
       <div className="projects__container">
         <h1>Four types of projects</h1>
-        {projects.map((project, index) => {
-          return (
-            <Project key={`project${index}`} project={project} index={index} />
-          );
-        })}
+        <div className="projects__wrapper">
+          {projects.map((project, index) => {
+            return (
+              <Project
+                key={`project${index}`}
+                project={project}
+                index={index}
+              />
+            );
+          })}
+        </div>
       </div>
       <Footer />
     </>

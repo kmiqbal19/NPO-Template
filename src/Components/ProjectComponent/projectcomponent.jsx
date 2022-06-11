@@ -8,7 +8,10 @@ import { BsFacebook } from "react-icons/bs";
 function Project({ project, index }) {
   return (
     <div className="project__container">
-      <h3>{project.projectname}</h3>
+      <h3>
+        {`Project 0${index + 1}: `}
+        {project.projectname}
+      </h3>
       <div className="project__container--mid">
         <p>{project.projectdescription}</p>
         <img src={urlFor(project.imageurl)} alt="project-img" />

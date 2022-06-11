@@ -1,19 +1,45 @@
 div.projects__container {
-  padding: 2rem 0rem;
+  padding: 5rem;
+  width: 100%;
+  min-height: 100vh;
+  background: url("https://i.ibb.co/BKC6Lh7/ray-mallick-5-J1b-HRX1f-Nw-unsplash.jpg");
+  background-size: contain;
+  @media screen and (min-width: 2000px) {
+    padding: 8rem;
+  }
+  @media screen and (max-width: 1200px) {
+    padding: 5rem 2rem;
+  }
+  @media screen and (max-width: 500px) {
+    padding: 5rem 1rem;
+  }
+
   h1 {
-    margin: 5rem 0rem;
+    margin: 5rem 0rem 5rem;
     text-align: center;
     text-transform: capitalize;
     position: relative;
+    font-family: "Arsenal", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-size: calc(2rem + 0.5vw);
+    letter-spacing: 5px;
+    text-shadow: 1px 2px 5px black;
     &::after {
       content: "";
       position: absolute;
       width: 5%;
       height: 5px;
-      background-color: black;
+      background-color: var(--dark-blue-color);
       bottom: -2rem;
       left: 50%;
       transform: translateX(-50%);
+      box-shadow: 1px 1px 5px black;
     }
+  }
+  div.projects__wrapper {
+    background-color: rgb(239, 237, 237);
+    margin-top: 5rem;
+    // box-shadow: 0px 0px 10px rgb(143, 137, 137);
   }
 }

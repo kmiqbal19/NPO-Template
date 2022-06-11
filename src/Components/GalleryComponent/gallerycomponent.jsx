@@ -10,7 +10,7 @@ function GalleryComponent({ post }) {
       <div className="gallery-post__text">
         <p>{post.projecttitle}</p>
         <p>{post.projectdesc}</p>
-        <a href={post.projectfburl}>Details</a>
+        <a href={post.projectfburl}>Learn more...</a>
       </div>
     </div>
   );
