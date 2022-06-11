@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./donate.scss";
 import { FaCopy } from "react-icons/fa";
 import { BsFillCreditCard2BackFill } from "react-icons/bs";
@@ -18,11 +18,14 @@ function Donate() {
   const handleCopyName = (e) => {
     nameCopyRef.current.select();
     document.execCommand("copy");
-    git;
+
     navigator.clipboard.writeText(nameCopyRef.current.value);
     e.target.focus();
     setCopySuccessName("Name Copied!");
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="donate__container">

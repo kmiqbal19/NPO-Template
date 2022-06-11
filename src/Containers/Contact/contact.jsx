@@ -1,7 +1,7 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./contact.scss";
 import { client } from "../../client";
-import emailImg from "../../Assets/email.png";
+
 import { Footer } from "../../Components";
 
 function Contact() {
@@ -44,6 +44,9 @@ function Contact() {
       console.log(err);
     }
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="contact__container">
