@@ -5,6 +5,9 @@ div.showworks__container {
   flex-direction: column;
   //   justify-content: center;
   //   align-items: center;
+  background: url("https://i.ibb.co/6W96zhx/annie-spratt-OTy0mkqc2-Yk-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
   h1 {
     font-size: calc(1rem + 1vw);
     text-align: center;
@@ -30,6 +33,7 @@ div.showworks__container {
     justify-content: center;
     align-items: center;
     padding: 3rem;
+
     @media screen and (max-width: 950px) {
       padding: 1rem;
     }
@@ -42,6 +46,7 @@ div.showworks__container {
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-color: aliceblue;
       @media screen and (max-width: 950px) {
         margin: 1rem;
       }

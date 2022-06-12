@@ -14,7 +14,7 @@ function Home() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <>
       <Header />
       <Showcase />
       <ShowWork />
@@ -22,7 +22,7 @@ function Home() {
       <StatProjects />
       <SupportSection />
       <Footer />
-    </div>
+    </>
   );
 }
 

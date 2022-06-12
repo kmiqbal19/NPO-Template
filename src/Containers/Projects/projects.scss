@@ -48,6 +48,7 @@ div.loading__container {
   height: calc(100vh - 4rem);
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   background-color: black;
   span {

@@ -1,4 +1,3 @@
-import { default as SingleProject } from "./SingleProject/singleproject.jsx";
 import { default as NavBar } from "./NavBar/navbar.jsx";
 import { default as Header } from "./Header/header.jsx";
 import { default as Slider } from "./Slider/slider.jsx";
@@ -11,7 +10,6 @@ import { default as Project } from "./ProjectComponent/projectcomponent.jsx";
 import { default as GalleryComponent } from "./GalleryComponent/gallerycomponent.jsx";
 import { default as Footer } from "./Footer/footer";
 export {
-  SingleProject,
   NavBar,
   Header,
   Slider,

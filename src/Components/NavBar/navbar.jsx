@@ -17,7 +17,11 @@ function NavBar() {
   window.addEventListener("scroll", changeNavBg);
 
   return (
-    <nav id="navbar" className={navBar ? "app__nav active" : "app__nav"}>
+    <nav
+      data-scroll-section
+      id="navbar"
+      className={navBar ? "app__nav active" : "app__nav"}
+    >
       <div className="app__nav-logo">
         <img src={logo} alt="main-logo" />
       </div>

@@ -6,6 +6,9 @@ div.showcase__container {
   display: flex;
   padding: 1rem 3rem;
   align-items: center;
+  // background: url("https://i.ibb.co/6W96zhx/annie-spratt-OTy0mkqc2-Yk-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
   @media screen and (min-width: 2000px) {
     padding: 3rem 10rem;
   }
