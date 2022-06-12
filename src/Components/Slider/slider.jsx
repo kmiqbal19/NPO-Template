@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import BtnSlider from "./btnSlider";
-import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 function Slider() {
   const [slideIndex, setSlideIndex] = useState(1);
   const arr = [1, 2, 3, 4, 5];
@@ -44,12 +44,15 @@ function Slider() {
               src={process.env.PUBLIC_URL + `/Imgs/img${index + 1}.jpg`}
               alt="slide-img"
             />
-            <div className="slider__slide--description">
+            <motion.div
+              className="slider__slide--description"
+              animate={{ scale: [0.3, 1] }}
+            >
               <p>
                 WE ARE ALWAYS WITH <span>HUMANITY {item}</span>
               </p>
               <p>We are helping those are in needs</p>
-            </div>
+            </motion.div>
           </div>
         );
       })}

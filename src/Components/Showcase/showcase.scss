@@ -21,8 +21,9 @@ div.showcase__container {
   }
   div.showcase__text {
     flex: 0.7;
-    height: 100%;
-
+    height: 80%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,10 +31,8 @@ div.showcase__container {
     // font-family: var(--font-base);
     p:nth-child(1) {
       font-size: calc(1rem + 0.7vw);
-      margin: 1rem;
-      border-bottom: 1px solid var(--azure-color);
-      border-top: 1px solid white;
-      padding: 5rem 0rem;
+      margin: 2rem 0rem;
+
       color: var(--azure-color);
       text-align: justify;
       @media screen and (max-width: 1300px) {
@@ -47,7 +46,7 @@ div.showcase__container {
     p:nth-child(2) {
       color: var(--azure-color);
       font-size: calc(1rem + 0.5vw);
-      margin-left: 1rem;
+      // margin-left: 1rem;
     }
   }
   div.showcase__img--container {

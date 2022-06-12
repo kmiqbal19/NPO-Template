@@ -2,18 +2,34 @@ import React from "react";
 import "./foundersection.scss";
 import { Link } from "react-router-dom";
 import { BsArrowUpRightSquare } from "react-icons/bs";
+import { motion } from "framer-motion";
+const variants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+  },
+};
 function FounderSection() {
   return (
     <div className="founder__container">
       <div className="founder__text">
-        <p>
+        <motion.p
+          initial="initial"
+          variants={variants}
+          whileInView="animate"
+          transition={{ duration: 0.5, type: "spring" }}
+        >
           Through foundational academic and professional programs like ESL,
           civics education, workforce development, and more, we provide the
           tools adults need for long-term success. Through foundational academic
           and professional programs like ESL, civics education, workforce
           development, and more, we provide the tools adults need for long-term
           success.
-        </p>
+        </motion.p>
         <Link to="/contact">
           Feel free to contact me <BsArrowUpRightSquare />
         </Link>

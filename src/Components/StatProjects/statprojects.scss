@@ -6,7 +6,12 @@ div.statprojects__container {
   align-items: center;
   flex-direction: column;
   padding: 1rem;
-  background: url("https://i.ibb.co/XxC0kjq/adolfo-felix-Yi9-QIOb-Q1o-unsplash.jpg");
+  background: linear-gradient(
+      to bottom,
+      rgba(20, 2, 2, 0.779),
+      rgba(0, 0, 0, 0.515)
+    ),
+    url("https://i.ibb.co/hWqchLR/glenn-carstens-peters-RLw-UC03-Gwc-unsplash.jpg");
   background-size: cover;
   color: white;
   background-attachment: fixed;
@@ -39,6 +44,7 @@ div.statprojects__container {
     font-size: calc(1rem + 0.5vw);
     padding: calc(1rem + 0.5vw);
     text-align: center;
+    opacity: 0;
   }
   a {
     font-size: calc(0.5rem + 0.5vw);
