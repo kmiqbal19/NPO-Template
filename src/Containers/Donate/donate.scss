@@ -9,6 +9,8 @@ div.donate__container {
   background: url("https://i.ibb.co/t838rrm/harrison-steen-w-d-YO5g-M-8-E-unsplash.jpg");
   background-size: cover;
   padding: 3rem 8rem;
+  font-family: "Arsenal", sans-serif;
+  letter-spacing: 1px;
   @media screen and (max-width: 1200px) {
     padding: 2rem;
   }
@@ -26,9 +28,17 @@ div.donate__container {
       flex-direction: column;
       padding: 1.5rem;
     }
+    @media screen and (min-width: 2000px) {
+      margin: 5rem 0rem;
+      padding: 4rem;
+    }
     img {
       width: 10rem;
       height: 5rem;
+      @media screen and (min-width: 2000px) {
+        width: 20rem;
+        height: 10rem;
+      }
     }
     p {
       font-size: calc(1rem + 0.5vw);
@@ -37,9 +47,17 @@ div.donate__container {
       @media screen and (max-width: 600px) {
         padding: 1rem 0rem;
       }
+      @media screen and (min-width: 2000px) {
+        padding: 2rem 2rem;
+        font-size: calc(1.5rem + 1vw);
+      }
       img {
         width: calc(1rem + 0.5vw);
         height: calc(1rem + 0.5vw);
+        @media screen and (min-width: 2000px) {
+          width: calc(1rem + 1vw);
+          height: calc(1rem + 1vw);
+        }
       }
     }
   }
@@ -54,6 +72,9 @@ div.donate__container {
     background-color: rgba(255, 255, 255, 0.385);
     border-radius: 1rem;
     padding: 3rem 5rem;
+    @media screen and (min-width: 2000px) {
+      padding: 5rem;
+    }
     @media screen and (max-width: 900px) {
       padding: 2rem 1.5rem;
     }
@@ -64,11 +85,17 @@ div.donate__container {
       @media screen and (max-width: 600px) {
         margin: 1rem 0rem;
       }
+      @media screen and (min-width: 2000px) {
+        font-size: calc(1.5rem + 0.5vw);
+      }
     }
     q {
       font-size: calc(0.8rem + 0.5vw);
       margin-top: 1rem;
       text-align: center;
+      @media screen and (min-width: 2000px) {
+        font-size: calc(0.8rem + 0.8vw);
+      }
     }
   }
   div.donate-info__container {
@@ -80,25 +107,32 @@ div.donate__container {
         flex-direction: column;
       }
       label {
-        font-size: calc(2rem + 1vw);
+        font-size: calc(1rem + 1vw);
         margin: 0rem 1rem;
+        @media screen and (min-width: 2000px) {
+          font-size: calc(2rem + 1vw);
+        }
         @media screen and (max-width: 1000px) {
-          font-size: calc(1rem + 1vw);
+          font-size: calc(0.8rem + 1vw);
         }
         @media screen and (max-width: 700px) {
           margin-bottom: 1rem;
         }
       }
       input {
-        font-size: calc(2rem + 0.5vw);
+        font-size: calc(1rem + 0.5vw);
         width: calc(10rem + 10vw);
         text-align: center;
         padding: 0.5rem 1rem;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
         border: none;
         background-color: rgba(255, 255, 255, 0.385);
         @media screen and (max-width: 1000px) {
           font-size: calc(1rem + 1vw);
+        }
+        @media screen and (min-width: 2000px) {
+          font-size: calc(1.5rem + 0.5vw);
+          // border-radius: 1rem;
         }
       }
       button {
@@ -106,14 +140,18 @@ div.donate__container {
         margin: 1rem;
         background-color: rgba(255, 255, 255, 0.385);
         border: none;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
         cursor: pointer;
         svg {
-          font-size: calc(2rem + 0.5vw);
+          font-size: calc(1rem + 0.5vw);
           color: gray;
 
           @media screen and (max-width: 1000px) {
             font-size: calc(1rem + 0.5vw);
+          }
+          @media screen and (min-width: 2000px) {
+            font-size: calc(1.5rem + 0.5vw);
+            // border-radius: 1rem;
           }
         }
         &:hover {
@@ -131,8 +169,15 @@ div.donate__container {
     margin: 4rem;
     font-size: 1.2rem;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.385);
+    padding: 1rem 5rem;
+    border-radius: 5px;
+
     @media screen and (max-width: 750px) {
       margin: 3rem 1rem;
+    }
+    @media screen and (min-width: 2000px) {
+      font-size: calc(1rem + 0.5vw);
     }
   }
 }

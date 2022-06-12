@@ -3,7 +3,7 @@ import "./contact.scss";
 import { client } from "../../client";
 
 import { Footer } from "../../Components";
-
+import { motion } from "framer-motion";
 function Contact() {
   const usernameRef = useRef(null);
   const emailRef = useRef(null);
@@ -50,7 +50,13 @@ function Contact() {
   return (
     <>
       <div className="contact__container">
-        <div className="contact__cards--container">
+        <motion.div
+          whileInView={{ opacity: [0, 1], y: [-50, 0] }}
+          transition={{
+            delay: 0.2,
+          }}
+          className="contact__cards--container"
+        >
           <div className="contact__card">
             <img src="https://i.ibb.co/6XGHchF/email-13762.png" alt="email" />
             <a href="mailto:hello@gmail.com">hello@gmail.com</a>
@@ -62,9 +68,16 @@ function Contact() {
             />
             <a href="https://wa.me/+123456789">+1 (234) 56789</a>
           </div>
-        </div>
+        </motion.div>
         {!isFormSubmitted ? (
-          <form className="contact__form" onSubmit={handleSubmit}>
+          <motion.form
+            whileInView={{ opacity: [0, 1], y: [50, 0] }}
+            transition={{
+              delay: 0.4,
+            }}
+            className="contact__form"
+            onSubmit={handleSubmit}
+          >
             <label>Name</label>
             <input
               ref={usernameRef}
@@ -104,7 +117,7 @@ function Contact() {
             >
               {loading ? "Sending..." : "Submit"}
             </button>
-          </form>
+          </motion.form>
         ) : (
           <div className="contact__submit-thank">
             <p>

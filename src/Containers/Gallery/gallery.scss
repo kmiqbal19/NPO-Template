@@ -3,13 +3,15 @@ div.gallery__container {
   height: 100%;
   padding: 10rem 5rem;
   background: url("https://i.ibb.co/GFXH9tB/s-o-c-i-a-l-c-u-t-Ojnm-CKmzr3-A-unsplash.jpg");
-  background-size: contain;
+  background-size: cover;
 
   @media screen and (min-width: 3000px) {
     padding: 15rem 15rem 5rem;
+    background-size: contain;
   }
   @media screen and (min-width: 2300px) and (max-width: 2999px) {
     padding: 15rem 8rem 5rem;
+    background-size: contain;
   }
   @media screen and (max-width: 750px) {
     padding: 7rem 1rem;

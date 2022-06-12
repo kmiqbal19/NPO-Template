@@ -3,6 +3,7 @@ import "./donate.scss";
 import { FaCopy } from "react-icons/fa";
 import { BsFillCreditCard2BackFill } from "react-icons/bs";
 import { Footer } from "../../Components";
+import { motion } from "framer-motion";
 function Donate() {
   const [copySuccessName, setCopySuccessName] = useState("");
   const [copySuccessNumber, setCopySuccessNumber] = useState("");
@@ -29,7 +30,11 @@ function Donate() {
   return (
     <>
       <div className="donate__container">
-        <div className="donate__bkash--container">
+        <motion.div
+          whileInView={{ opacity: [0, 1], y: [20, 0] }}
+          transition={{ delay: 0.4 }}
+          className="donate__bkash--container"
+        >
           <img
             src="https://i.ibb.co/51Yjkgj/Bkash-logo-PNG1.png"
             alt="bkash-logo"
@@ -39,8 +44,12 @@ function Donate() {
             <img src="https://i.ibb.co/WfdP3dp/bangladesh.png" alt="bd-logo" />,
             Send money through bKash. Give reference of 'DONATION'
           </p>
-        </div>
-        <div className="donate-info__container">
+        </motion.div>
+        <motion.div
+          whileInView={{ opacity: [0, 1], y: [20, 0] }}
+          transition={{ delay: 0.6 }}
+          className="donate-info__container"
+        >
           <div>
             <label>Account Name : </label>
             <input
@@ -62,8 +71,12 @@ function Donate() {
             </button>
             <span>{copySuccessNumber}</span>
           </div>
-        </div>
-        <div className="donate__wise">
+        </motion.div>
+        <motion.div
+          whileInView={{ opacity: [0, 1], y: [20, 0] }}
+          transition={{ delay: 0.8 }}
+          className="donate__wise"
+        >
           <p>
             Those who are outside Bangladesh, you can send money through
             TransferWise / ACE Money Transfer or any other money transfer
@@ -78,12 +91,15 @@ function Donate() {
             Never get tired of doing little things for others, sometimes those
             little things occupy the biggest parts of their hearts
           </q>
-        </div>
+        </motion.div>
 
-        <p className="donate__credit-message">
+        <motion.p
+          whileInView={{ opacity: [0, 1], y: [20, 0] }}
+          className="donate__credit-message"
+        >
           <BsFillCreditCard2BackFill /> Soon we will integrate card payments
           through website.
-        </p>
+        </motion.p>
       </div>
       <Footer />
     </>

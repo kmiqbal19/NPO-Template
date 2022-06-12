@@ -30,9 +30,9 @@ function Project({ project, index }) {
         />
       </div>
       <div className="project__container--bottom">
-        <motion.div
-          whileInView={{ x: [-50, 0], opacity: [0, 1] }}
-          transition={{ delay: 0.2 }}
+        <div
+          // whileInView={{ x: [-50, 0], opacity: [0, 1] }}
+          // transition={{ delay: 0.2, duration: 1.5 }}
           className="project__container--bottom-video"
         >
           <div className="project__container--video-overlay">
@@ -52,7 +52,7 @@ function Project({ project, index }) {
             playing={true}
             playsinline={true}
           />
-        </motion.div>
+        </div>
         <motion.p
           whileInView={{ x: [50, 0], opacity: [0, 1] }}
           transition={{ delay: 0.4 }}
