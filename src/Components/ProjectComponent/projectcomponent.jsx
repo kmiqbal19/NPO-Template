@@ -4,20 +4,37 @@ import { urlFor } from "../../client";
 import ReactPlayer from "react-player";
 
 import { BsFacebook } from "react-icons/bs";
-
+import { motion } from "framer-motion";
 function Project({ project, index }) {
   return (
     <div className="project__container">
-      <h3>
+      <motion.h3
+        whileInView={{ y: [50, 0], opacity: [0, 1] }}
+        transition={{ delay: 0.2 }}
+      >
         {`Project 0${index + 1}: `}
         {project.projectname}
-      </h3>
+      </motion.h3>
       <div className="project__container--mid">
-        <p>{project.projectdescription}</p>
-        <img src={urlFor(project.imageurl)} alt="project-img" />
+        <motion.p
+          whileInView={{ x: [-200, 0], opacity: [0, 1] }}
+          transition={{ delay: 0.4 }}
+        >
+          {project.projectdescription}
+        </motion.p>
+        <motion.img
+          whileInView={{ x: [50, 0], opacity: [0, 1] }}
+          transition={{ delay: 0.5 }}
+          src={urlFor(project.imageurl)}
+          alt="project-img"
+        />
       </div>
       <div className="project__container--bottom">
-        <div className="project__container--bottom-video">
+        <motion.div
+          whileInView={{ x: [-50, 0], opacity: [0, 1] }}
+          transition={{ delay: 0.2 }}
+          className="project__container--bottom-video"
+        >
           <div className="project__container--video-overlay">
             <img
               src="https://i.ibb.co/YQMJZ2H/237838738-109048231487732-6829085316391439066-n.jpg"
@@ -31,11 +48,17 @@ function Project({ project, index }) {
             url={process.env.PUBLIC_URL + `/videos/video-${index + 1}.mp4`}
             width="100%"
             height="100%"
-            autoPlay
             controls
+            playing={true}
+            playsinline={true}
           />
-        </div>
-        <p>{project.videodesc}</p>
+        </motion.div>
+        <motion.p
+          whileInView={{ x: [50, 0], opacity: [0, 1] }}
+          transition={{ delay: 0.4 }}
+        >
+          {project.videodesc}
+        </motion.p>
       </div>
     </div>
   );

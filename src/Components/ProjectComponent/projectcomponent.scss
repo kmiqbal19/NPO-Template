@@ -28,7 +28,7 @@ div.project__container {
     justify-content: space-around;
     align-items: center;
     margin: 3rem 0rem;
-    // border: 1px solid red;
+
     @media screen and (max-width: 1000px) {
       flex-direction: column-reverse;
     }
