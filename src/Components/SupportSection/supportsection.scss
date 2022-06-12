@@ -1,6 +1,6 @@
 div.supportsection__container {
   width: 100%;
-  height: calc(40rem + 20vh);
+  height: calc(40rem + 30vh);
 
   display: flex;
   flex-direction: column;
@@ -11,6 +11,10 @@ div.supportsection__container {
   background-color: rgba(0, 0, 0, 0.594);
   background-size: cover;
   font-family: "Arsenal", sans-serif;
+  @media screen and (min-width: 2000px) {
+    height: calc(100vh - 4rem);
+    padding-top: 5rem;
+  }
   div.support__volunteer {
     width: 70%;
     height: 60%;
@@ -38,6 +42,9 @@ div.supportsection__container {
         transform: translateX(-50%);
         background-color: white;
       }
+      @media screen and (min-width: 2000px) {
+        margin: 2rem 0rem 5rem;
+      }
     }
     ul {
       list-style: none;
@@ -46,6 +53,10 @@ div.supportsection__container {
         color: white;
         padding: 1.5rem;
         font-size: calc(1rem + 0.5vw);
+        @media screen and (min-width: 2000px) {
+          font-size: calc(1rem + 0.8vw);
+          padding: 2.5rem;
+        }
       }
     }
     a {
@@ -57,6 +68,10 @@ div.supportsection__container {
       background-color: white;
       text-decoration: none;
       transition: all 0.3s ease;
+      @media screen and (min-width: 2000px) {
+        padding: 0.8rem 2rem;
+        font-size: 1.5rem;
+      }
       &:hover {
         color: white;
         background-color: var(--light-blue-color);
@@ -73,11 +88,18 @@ div.supportsection__container {
       margin: 1rem 2rem;
       font-size: calc(1.2rem + 0.5vw);
       text-align: center;
+      @media screen and (min-width: 2000px) {
+        font-size: calc(1.5rem + 0.5vw);
+      }
     }
     svg {
       font-size: calc(5rem + 2vw);
       color: white;
       transition: color 0.2s ease-out;
+      @media screen and (min-width: 2000px) {
+        font-size: calc(5rem + 3vw);
+        margin-top: 1rem;
+      }
       &:hover {
         color: rgb(235, 74, 139);
       }
@@ -90,6 +112,10 @@ div.supportsection__container {
       background-color: white;
       margin-top: 1rem;
       transition: all 0.4s ease-out;
+      @media screen and (min-width: 2000px) {
+        font-size: calc(1.5rem + 0.5vw);
+        padding: 0.8rem 2rem;
+      }
       &:hover {
         color: white;
         background-color: var(--light-blue-color);

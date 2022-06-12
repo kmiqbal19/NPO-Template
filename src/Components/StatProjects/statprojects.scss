@@ -16,6 +16,9 @@ div.statprojects__container {
   color: white;
   background-attachment: fixed;
   font-family: "Arsenal", sans-serif;
+  @media screen and (min-width: 2000px) {
+    height: calc(50rem + 20vh);
+  }
   h1 {
     margin-bottom: calc(3rem + 2vh);
     position: relative;
@@ -45,7 +48,15 @@ div.statprojects__container {
     padding: calc(1rem + 0.5vw);
     text-align: center;
     opacity: 0;
+    @media screen and (min-width: 2000px) {
+      font-size: calc(1.5rem + 0.5vw);
+    }
+    span {
+      color: var(--dark-pink-color);
+      font-weight: bold;
+    }
   }
+
   a {
     font-size: calc(0.5rem + 0.5vw);
     padding: 0.5rem 1.5rem;

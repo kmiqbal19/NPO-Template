@@ -17,7 +17,12 @@ div.showcase__container {
   @media screen and (max-width: 950px) {
     flex-direction: column-reverse;
     height: 100%;
-    padding: 1rem;
+    padding: 1rem 3rem;
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column-reverse;
+    height: 100%;
+    padding: 1.5rem;
   }
   div.showcase__text {
     flex: 0.7;
@@ -28,15 +33,15 @@ div.showcase__container {
     flex-direction: column;
     justify-content: center;
 
-    // font-family: var(--font-base);
     p:nth-child(1) {
       font-size: calc(1rem + 0.7vw);
       margin: 2rem 0rem;
 
       color: var(--azure-color);
       text-align: justify;
-      @media screen and (max-width: 1300px) {
-        padding: 3rem 0rem;
+
+      @media screen and (max-width: 950px) {
+        padding: 1rem 0rem;
       }
       span {
         font-weight: bold;
@@ -46,7 +51,9 @@ div.showcase__container {
     p:nth-child(2) {
       color: var(--azure-color);
       font-size: calc(1rem + 0.5vw);
-      // margin-left: 1rem;
+      @media screen and (max-width: 950px) {
+        margin-bottom: 2rem;
+      }
     }
   }
   div.showcase__img--container {
