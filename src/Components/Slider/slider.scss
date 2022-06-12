@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
 div.slider__container {
   width: 100vw;
   height: calc(70vh + 10rem);
@@ -30,6 +31,7 @@ div.slider__container {
       flex-direction: column;
       padding: 1.5rem 3rem;
       overflow: hidden;
+      font-family: "Rajdhani", sans-serif;
       @media screen and (max-width: 900px) {
         height: 250px;
         width: 60%;
@@ -47,22 +49,22 @@ div.slider__container {
         bottom: 25vh;
       }
       p:nth-child(1) {
-        font-size: calc(1rem + 1vw);
+        font-size: calc(1.5rem + 1vw);
         color: white;
         width: 100%;
-        font-family: var(--font-header);
 
         padding: 0.3rem 1rem;
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid var(--dark-pink-color);
         span {
-          color: red;
+          color: var(--dark-pink-color);
+          font-weight: bold;
         }
         @media screen and (min-width: 2000px) {
           font-size: calc(2rem + 1vw);
         }
       }
       p:nth-child(2) {
-        font-size: 1rem;
+        font-size: calc(1rem + 0.5vw);
         color: var(--white-color);
         margin: 1.5rem 1rem 1rem;
         @media screen and (min-width: 2000px) {

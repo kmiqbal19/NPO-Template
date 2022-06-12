@@ -48,7 +48,7 @@ function Slider() {
               <p>
                 WE ARE ALWAYS WITH <span>HUMANITY {item}</span>
               </p>
-              <p>we are helping those are in needs</p>
+              <p>We are helping those are in needs</p>
             </div>
           </div>
         );

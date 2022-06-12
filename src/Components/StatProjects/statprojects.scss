@@ -10,11 +10,13 @@ div.statprojects__container {
   background-size: cover;
   color: white;
   background-attachment: fixed;
+  font-family: "Arsenal", sans-serif;
   h1 {
     margin-bottom: calc(3rem + 2vh);
     position: relative;
     font-size: calc(1.5rem + 1vw);
     text-align: center;
+    letter-spacing: 3px;
     @media screen and (max-width: 600px) {
       font-size: calc(1.5rem + 0.5vw);
     }
@@ -37,5 +39,17 @@ div.statprojects__container {
     font-size: calc(1rem + 0.5vw);
     padding: calc(1rem + 0.5vw);
     text-align: center;
+  }
+  a {
+    font-size: calc(0.5rem + 0.5vw);
+    padding: 0.5rem 1.5rem;
+    background-color: var(--dark-pink-color);
+    margin: 3rem;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: rgb(181, 54, 130);
+    }
   }
 }

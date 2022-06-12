@@ -10,6 +10,7 @@ div.supportsection__container {
     url("https://i.ibb.co/ZWDMTGf/katt-yukawa-K0-E6-E0a0-R3-A-unsplash.jpg");
   background-color: rgba(0, 0, 0, 0.594);
   background-size: cover;
+  font-family: "Arsenal", sans-serif;
   div.support__volunteer {
     width: 70%;
     height: 60%;
@@ -23,8 +24,20 @@ div.supportsection__container {
     p {
       font-size: calc(2rem + 1vw);
       color: var(--azure-color);
-      margin-bottom: 1rem;
+      margin: 3rem 0rem;
       text-align: center;
+      font-family: var(--font-base);
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -1.5rem;
+        width: 15%;
+        height: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+      }
     }
     ul {
       list-style: none;
@@ -58,7 +71,7 @@ div.supportsection__container {
     p {
       color: white;
       margin: 1rem 2rem;
-      font-size: 1.5rem;
+      font-size: calc(1.2rem + 0.5vw);
       text-align: center;
     }
     svg {

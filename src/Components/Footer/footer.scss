@@ -5,6 +5,7 @@ div.footer__container {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Arsenal", sans-serif;
   @media screen and (max-width: 600px) {
     flex-direction: column;
     height: 7rem;

@@ -32,7 +32,9 @@
     justify-content: center;
     align-items: center;
     list-style: none;
-    font-size: calc(0.5rem + 0.5vw);
+    font-size: calc(0.8rem + 0.5vw);
+
+    font-family: "Arsenal", sans-serif;
     @media screen and (max-width: 900px) {
       display: none;
     }
