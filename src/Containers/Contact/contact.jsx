@@ -31,7 +31,7 @@ function Contact() {
     email: "",
     message: "",
   });
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(true);
   const [loading, setLoading] = useState(false);
   const { username, email, message } = formData;
   const handleChangeInput = (e) => {

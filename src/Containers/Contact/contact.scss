@@ -10,6 +10,9 @@ div.contact__container {
   background-size: cover;
   font-family: "Arsenal", sans-serif;
   letter-spacing: 2px;
+  @media screen and (max-height: 600px) {
+    margin-bottom: 10rem;
+  }
   div.contact__cards--container {
     display: flex;
 
@@ -125,16 +128,30 @@ div.contact__container {
 }
 div.contact__submit-thank {
   height: 40%;
-  width: 50%;
+  width: 60%;
+  line-height: 2;
   //   border: 1px solid red;
   display: flex;
   align-items: center;
+  @media screen and (max-width: 1000px) {
+    width: 80%;
+  }
+  @media screen and (max-width: 650px) {
+    width: 90%;
+    line-height: 1.5;
+  }
   p {
     color: var(--light-blue-color);
     font-size: 1.5rem;
     text-align: center;
-    padding: 2rem 5rem;
+    padding: 2rem 4rem;
     background-color: white;
     border-radius: 1rem;
+    @media screen and (max-width: 650px) {
+      padding: 2rem;
+    }
+    @media screen and (max-width: 400px) {
+      padding: 1rem;
+    }
   }
 }
