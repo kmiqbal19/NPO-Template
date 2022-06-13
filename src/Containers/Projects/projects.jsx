@@ -24,6 +24,7 @@ function Projects() {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
+    window.scrollTo(0, 0);
     const fetch = async () => {
       setLoading(true);
       const query = '*[_type == "projects"]';

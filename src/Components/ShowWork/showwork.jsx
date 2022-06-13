@@ -9,18 +9,38 @@ function ShowWork() {
   const workRef = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
-    const works = document.querySelectorAll(".showwork__work");
-    gsap.to(works, {
-      scale: 1,
-      duration: 0.5,
-      ease: "ease",
-      stagger: 0.3,
-      scrollTrigger: {
-        trigger: workRef.current,
-        start: "10% center",
-        end: "50% center",
-        // markers: true,
-        toggleActions: "play none none reset",
+    ScrollTrigger.matchMedia({
+      all: function () {
+        const works = document.querySelectorAll(".showwork__work");
+        gsap.to(works, {
+          scale: 1,
+          duration: 0.5,
+          ease: "ease",
+          stagger: 0.3,
+          scrollTrigger: {
+            trigger: workRef.current,
+            start: "10% center",
+            end: "50% center",
+            // markers: true,
+            toggleActions: "play none none reset",
+          },
+        });
+      },
+      "(max-width:800px)": function () {
+        const works = document.querySelectorAll(".showwork__work");
+        gsap.to(works, {
+          scale: 1,
+          duration: 0.5,
+          ease: "ease",
+          stagger: 0.3,
+          scrollTrigger: {
+            trigger: workRef.current,
+            start: "top center",
+            end: "50% center",
+            // markers: true,
+            toggleActions: "play none none reset",
+          },
+        });
       },
     });
   }, []);

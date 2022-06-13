@@ -30,6 +30,7 @@ function Gallery() {
   const skip = ITEMS_PER_PAGE * (page - 1);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const fetchPosts = async () => {
       setloading(true);
       const query = "*[_type == 'gallery'] | order(_createdAt)";
