@@ -5,7 +5,7 @@ import { client } from "../../client.js";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     const fetch = async () => {
       setLoading(true);

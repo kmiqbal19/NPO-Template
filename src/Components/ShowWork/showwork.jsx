@@ -18,9 +18,9 @@ function ShowWork() {
       scrollTrigger: {
         trigger: workRef.current,
         start: "10% center",
-        end: "25% center",
+        end: "50% center",
         // markers: true,
-        // toggleActions: "play pause resume reset",
+        toggleActions: "play none none reset",
       },
     });
   }, []);

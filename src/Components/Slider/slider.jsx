@@ -46,7 +46,7 @@ function Slider() {
             />
             <motion.div
               className="slider__slide--description"
-              animate={{ scale: [0.3, 1] }}
+              animate={{ opacity: [0, 1], x: [600, 0] }}
             >
               <p>
                 WE ARE ALWAYS WITH <span>HUMANITY {item}</span>

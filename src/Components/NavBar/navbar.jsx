@@ -4,6 +4,7 @@ import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import logo from "../../Assets/logo.png";
+import { Images } from "../../Constants";
 function NavBar() {
   const [toggle, setToggle] = useState(false);
   const [navBar, setNavBar] = useState(false);
@@ -23,7 +24,7 @@ function NavBar() {
       className={navBar ? "app__nav active" : "app__nav"}
     >
       <div className="app__nav-logo">
-        <img src={logo} alt="main-logo" />
+        <img src={Images.logo} alt="main-logo" />
       </div>
       <ul className="app__nav-list">
         {["home", "projects", "gallery", "contact", "donate"].map(
