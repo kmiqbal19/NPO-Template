@@ -6,20 +6,6 @@ import { Link } from "react-router-dom";
 
 import { Images } from "../../Constants";
 
-// const pathVariants = {
-//   initial: {
-//     opacity: 0,
-//     pathLength: 0,
-//   },
-//   animate: {
-//     opacity: 1,
-//     pathLength: 1,
-//     transition: {
-//       duration: 2,
-//       ease: "easeInOut",
-//     },
-//   },
-// };
 function NavBar() {
   const [toggle, setToggle] = useState(false);
   const [navBar, setNavBar] = useState(false);

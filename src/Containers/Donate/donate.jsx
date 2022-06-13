@@ -46,7 +46,12 @@ function Donate() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <motion.div initial="hidden" animate="visible" exit="exit">
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <div className="donate__container">
         <motion.div
           whileInView={{ opacity: [0, 1], y: [20, 0] }}

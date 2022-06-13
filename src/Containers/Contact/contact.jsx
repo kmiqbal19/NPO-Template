@@ -66,7 +66,7 @@ function Contact() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <motion.div exit="exit">
+    <motion.div variants={containerVariants} exit="exit">
       <div className="contact__container">
         <motion.div
           whileInView={{ opacity: [0, 1], y: [-50, 0] }}

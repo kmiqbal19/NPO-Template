@@ -3,7 +3,7 @@ import "./showwork.scss";
 import Data from "./showworkData";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
-import { Power4 } from "gsap";
+
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 function ShowWork() {
   const workRef = useRef(null);
