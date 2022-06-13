@@ -3,8 +3,11 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { Home, Projects, Gallery, Contact, Donate } from "./Containers";
 import { NavBar } from "./Components";
 import { AnimatePresence } from "framer-motion";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 const App = () => {
   const location = useLocation();
+  gsap.registerPlugin(ScrollTrigger);
   console.log(location);
   return (
     <div className="app">

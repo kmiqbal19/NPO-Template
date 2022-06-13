@@ -7,11 +7,11 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 function ShowWork() {
   const workRef = useRef(null);
-  gsap.registerPlugin(ScrollTrigger);
+ 
   useEffect(() => {
+    const works = document.querySelectorAll(".showwork__work");
     ScrollTrigger.matchMedia({
       all: function () {
-        const works = document.querySelectorAll(".showwork__work");
         gsap.to(works, {
           scale: 1,
           duration: 0.5,
@@ -27,18 +27,17 @@ function ShowWork() {
         });
       },
       "(max-width:800px)": function () {
-        const works = document.querySelectorAll(".showwork__work");
         gsap.to(works, {
           scale: 1,
           duration: 0.5,
           ease: "ease",
-          stagger: 0.3,
+          stagger: 1,
           scrollTrigger: {
             trigger: workRef.current,
             start: "top center",
             end: "50% center",
             // markers: true,
-            toggleActions: "play none none reset",
+            toggleActions: "play none none none",
           },
         });
       },
