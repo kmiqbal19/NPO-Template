@@ -1,20 +1,24 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { Home, Projects, Gallery, Contact, Donate } from "./Containers";
-import { SingleProject, NavBar } from "./Components";
-
+import { NavBar } from "./Components";
+import { AnimatePresence } from "framer-motion";
 const App = () => {
+  const location = useLocation();
+  console.log(location);
   return (
     <div className="app">
       <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/donate" element={<Donate />} />
-      </Routes>
+      <AnimatePresence>
+        <Routes location={location} key={location.key}>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/donate" element={<Donate />} />
+        </Routes>
+      </AnimatePresence>
     </div>
   );
 };

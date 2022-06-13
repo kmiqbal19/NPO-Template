@@ -2,7 +2,24 @@ import React, { useEffect, useState } from "react";
 import "./projects.scss";
 import { Project, Footer } from "../../Components";
 import { client } from "../../client.js";
-
+import { motion } from "framer-motion";
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
+  exit: {
+    x: "-100vw",
+    transition: {
+      ease: "easeInOut",
+    },
+  },
+};
 function Projects() {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -18,7 +35,7 @@ function Projects() {
     fetch();
   }, []);
   return (
-    <>
+    <motion.div variants={containerVariants} exit="exit">
       {loading ? (
         <div className="loading__container">
           <svg
@@ -92,7 +109,7 @@ function Projects() {
         </div>
       )}
       <Footer />
-    </>
+    </motion.div>
   );
 }
 

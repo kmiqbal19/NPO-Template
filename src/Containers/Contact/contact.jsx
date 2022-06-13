@@ -4,6 +4,24 @@ import { client } from "../../client";
 import { Images } from "../../Constants";
 import { Footer } from "../../Components";
 import { motion } from "framer-motion";
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      // delay: 1.5,
+      duration: 0.5,
+    },
+  },
+  exit: {
+    x: "-100vw",
+    transition: {
+      ease: "easeInOut",
+    },
+  },
+};
 function Contact() {
   const usernameRef = useRef(null);
   const emailRef = useRef(null);
@@ -48,7 +66,7 @@ function Contact() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <>
+    <motion.div exit="exit">
       <div className="contact__container">
         <motion.div
           whileInView={{ opacity: [0, 1], y: [-50, 0] }}
@@ -124,7 +142,7 @@ function Contact() {
         )}
       </div>
       <Footer />
-    </>
+    </motion.div>
   );
 }
 

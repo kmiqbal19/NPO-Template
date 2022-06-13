@@ -2,7 +2,25 @@ import React, { useState, useEffect } from "react";
 import "./gallery.scss";
 import { client } from "../../client";
 import { GalleryComponent, Footer } from "../../Components";
-
+import { motion } from "framer-motion";
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      // delay: 1.5,
+      duration: 0.5,
+    },
+  },
+  exit: {
+    x: "-100vw",
+    transition: {
+      ease: "easeInOut",
+    },
+  },
+};
 function Gallery() {
   const [galleryPost, setGalleryPost] = useState([]);
   const [page, setPage] = useState(1);
@@ -26,7 +44,7 @@ function Gallery() {
   }, [page, skip]);
 
   return (
-    <>
+    <motion.div variants={containerVariants} exit="exit">
       {loading ? (
         <div className="loading__container">
           <svg
@@ -120,7 +138,7 @@ function Gallery() {
         </div>
       )}
       <Footer />
-    </>
+    </motion.div>
   );
 }
 
