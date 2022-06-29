@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import BtnSlider from "./btnSlider";
 import { motion } from "framer-motion";
 function Slider() {
@@ -27,7 +27,7 @@ function Slider() {
   //     number = number + 1;
   //     setSlideIndex(number);
   //   }, 20000);
-  // });
+  // }, [arr.length]);
   return (
     <div className="slider__container">
       {arr.map((item, index) => {
