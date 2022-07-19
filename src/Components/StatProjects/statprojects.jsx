@@ -3,23 +3,9 @@ import { Link } from "react-router-dom";
 import "./statprojects.scss";
 import { FaProjectDiagram } from "react-icons/fa";
 import { motion } from "framer-motion";
-// import { gsap } from "gsap";
+
 function StatProjects() {
   const containerRef = useRef(null);
-  // useEffect(() => {
-  //   const projects = document.querySelectorAll(".statproject");
-  //   gsap.to(projects, {
-  //     opacity: 1,
-  //     stagger: 0.4,
-  //     scrollTrigger: {
-  //       trigger: containerRef.current,
-  //       start: "10% center",
-  //       end: "10% center",
-
-  //       toggleActions: "play none none reset",
-  //     },
-  //   });
-  // }, []);
   const variants = {
     initial: {
       opacity: 0.9,

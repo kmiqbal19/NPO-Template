@@ -8,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const App = () => {
   const location = useLocation();
   gsap.registerPlugin(ScrollTrigger);
-  console.log(location);
+
   return (
     <div className="app">
       <NavBar />
