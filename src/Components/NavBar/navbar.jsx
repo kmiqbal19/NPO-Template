@@ -19,12 +19,11 @@ function NavBar() {
   window.addEventListener("scroll", changeNavBg);
 
   return (
-    <nav
-      data-scroll-section
-      id="navbar"
-      className={navBar ? "app__nav active" : "app__nav"}
-    >
-      <div className="app__nav-logo">
+    <nav id="navbar" className={navBar ? "app__nav active" : "app__nav"}>
+      <div
+        className="app__nav-logo"
+        onClick={() => window.location.replace("/")}
+      >
         <img src={Images.logo} alt="main-logo" />
       </div>
       <ul className="app__nav-list">

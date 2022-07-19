@@ -116,6 +116,11 @@ div.gallery-post__container {
       padding: 1rem 0rem;
       color: black;
       text-decoration: none;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      &:hover {
+        color: blue;
+        transform: scale(1.1);
+      }
     }
   }
 }
