@@ -5,13 +5,13 @@ function Footer() {
   return (
     <div className="footer__container">
       <div className="footer__socials">
-        <a href=" dfdf">
+        <a href="/">
           <BsFacebook />
         </a>
-        <a href=" dfdf">
+        <a href="/">
           <BsMessenger />
         </a>
-        <a href=" dfdf">
+        <a href="/">
           <BsWhatsapp />
         </a>
       </div>
