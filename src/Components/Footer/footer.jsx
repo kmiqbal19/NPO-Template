@@ -18,7 +18,10 @@ function Footer() {
       <div className="footer__text">
         <p> &copy; 2022 All rights reserved</p>
         <p>
-          Developed by <a href="kmiqbal.com">{">_ "}iqbal</a>
+          Developed by{" "}
+          <a href="https://www.kmiqbal.com" target="_blank" rel="noreferrer">
+            {">_ "}iqbal
+          </a>
         </p>
       </div>
     </div>
