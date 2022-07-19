@@ -3,6 +3,7 @@ import "./foundersection.scss";
 import { Link } from "react-router-dom";
 import { BsArrowUpRightSquare } from "react-icons/bs";
 import { motion } from "framer-motion";
+import founder from "../../Assets/founder.jpg";
 const variants = {
   initial: {
     opacity: 0,
@@ -35,10 +36,7 @@ function FounderSection() {
         </Link>
       </div>
       <div className="founder__img">
-        <img
-          src="https://i.ibb.co/Gsxn2PW/Whats-App-Image-2021-11-25-at-22-57-47.jpg"
-          alt="founder-avatar"
-        />
+        <img src={founder} alt="founder-avatar" />
       </div>
     </div>
   );
