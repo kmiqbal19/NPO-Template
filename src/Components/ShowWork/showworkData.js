@@ -1,37 +1,37 @@
+import img1 from "../../Assets/showworkImgs/work (1).jpg";
+import img2 from "../../Assets/showworkImgs/work (2).jpg";
+import img3 from "../../Assets/showworkImgs/work (3).jpg";
+import img4 from "../../Assets/showworkImgs/work (4).jpg";
+import img5 from "../../Assets/showworkImgs/work (5).jpg";
+import img6 from "../../Assets/showworkImgs/work (6).jpg";
 const Data = [
   {
-    imgUrl:
-      "https://i.ibb.co/x8Dv0fd/brands-people-Ax8-IA8-GAj-Vg-unsplash-1.jpg",
+    imgUrl: img1,
     title: "You can help us continue and expand",
     desc: "Through foundational academic and professional programs like ESL, civics education, workforce development, and more, we provide the tools adults need for long-term success. ",
   },
   {
-    imgUrl:
-      "https://i.ibb.co/x8Dv0fd/brands-people-Ax8-IA8-GAj-Vg-unsplash-1.jpg",
+    imgUrl: img2,
     title: "You can help us continue and expand",
     desc: "Through foundational academic and professional programs like ESL, civics education, workforce development, and more, we provide the tools adults need for long-term success. ",
   },
   {
-    imgUrl:
-      "https://i.ibb.co/x8Dv0fd/brands-people-Ax8-IA8-GAj-Vg-unsplash-1.jpg",
+    imgUrl: img3,
     title: "You can help us continue and expand",
     desc: "Through foundational academic and professional programs like ESL, civics education, workforce development, and more, we provide the tools adults need for long-term success. ",
   },
   {
-    imgUrl:
-      "https://i.ibb.co/x8Dv0fd/brands-people-Ax8-IA8-GAj-Vg-unsplash-1.jpg",
+    imgUrl: img4,
     title: "You can help us continue and expand",
     desc: "Through foundational academic and professional programs like ESL, civics education, workforce development, and more, we provide the tools adults need for long-term success. ",
   },
   {
-    imgUrl:
-      "https://i.ibb.co/x8Dv0fd/brands-people-Ax8-IA8-GAj-Vg-unsplash-1.jpg",
+    imgUrl: img5,
     title: "You can help us continue and expand",
     desc: "Through foundational academic and professional programs like ESL, civics education, workforce development, and more, we provide the tools adults need for long-term success. ",
   },
   {
-    imgUrl:
-      "https://i.ibb.co/x8Dv0fd/brands-people-Ax8-IA8-GAj-Vg-unsplash-1.jpg",
+    imgUrl: img6,
     title: "You can help us continue and expand",
     desc: "Through foundational academic and professional programs like ESL, civics education, workforce development, and more, we provide the tools adults need for long-term success. ",
   },
